@@ -1,0 +1,6 @@
+framework module Pods_SteemShutter_Framework {
+  umbrella header "Pods-SteemShutter Framework-umbrella.h"
+
+  export *
+  module * { export * }
+}
