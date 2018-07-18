@@ -11,14 +11,22 @@ import SwiftyJSON
 
 class ViewController: UIViewController {
     
+    // Buttons
+    // Each button opens a segue and re-directs a user to another view controller
+    
     @IBOutlet weak var openCameraButton: UIButton!
     @IBOutlet weak var signatureCreatorButton: UIButton!
     @IBOutlet weak var memeModeButton: UIButton!
     @IBOutlet weak var collageFramesButton: UIButton!
     
+    
+    // Labels (static text fields)
+    
     @IBOutlet weak var signatureLabel: UILabel!
     @IBOutlet weak var cntentLabel: UILabel!
     @IBOutlet weak var payoutLabel: UILabel!
+    
+    // Havinga few hidden labels is always useful, sometimes it is better than forcing unwrap of optional vars
     
     @IBOutlet weak var hiddenLabel: UILabel!
     
@@ -27,10 +35,19 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        
+        // Let's get closer to Apple image by rounding some corners
+        
         openCameraButton.layer.cornerRadius = 12
         signatureCreatorButton.layer.cornerRadius = 12
         memeModeButton.layer.cornerRadius = 12
         collageFramesButton.layer.cornerRadius = 12
+        
+        
+        
+        
+        // Calling SteemApi function that fetches info about user's most recent post on Steemit
+        // To call this function, it is necessarry to have a saved signature. So if there is no any saved signature, the function will just stay quiet
         
         
         if signatureLabel.text != nil {
@@ -51,6 +68,11 @@ class ViewController: UIViewController {
         
         
     }
+    
+    
+    // When you get to the Signature Creator View controller, these three vars are always stay saved until you change them
+    // Fetching those vars needed for call SteemApi function
+    
     override func viewDidAppear(_ animated: Bool) {
         if let x = UserDefaults.standard.object(forKey: "signatureLabel") as? String {
             hiddenLabel.text = x
@@ -87,12 +109,26 @@ class ViewController: UIViewController {
         
     }
     
+    
+    @IBAction func memeModeAction(_ sender: Any) {
+        
+        performSegue(withIdentifier: "memeSegue", sender: nil)
+        
+        
+    }
+    
+    
+    
+    
     func SteemApi() {
         
         
-        // url SteemJS api (Content by blog), instead of username, the function adds the text from userLabel
+        // url SteemJS api (Content by blog), instead of username, the function adds the text from signatureLabel
         let url = URL(string: "https://api.steemjs.com/get_discussions_by_blog?query=%7B%22tag%22%3A%22" + signatureLabel.text! + "%22%2C%20%22limit%22%3A%20%221%22%7D")
         
+        
+        
+        // We will use SwiftyJSON for this
         
         URLSession.shared.dataTask(with: url!, completionHandler: {
             (data, response, error) in

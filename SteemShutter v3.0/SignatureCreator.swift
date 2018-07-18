@@ -10,14 +10,33 @@ import UIKit
 
 class SignatureCreator: UIViewController, UITextFieldDelegate, UIPickerViewDataSource, UIPickerViewDelegate, UINavigationControllerDelegate {
     
+    
+    // Text fiels to write your Steemit username
+    
     @IBOutlet weak var signatureTextField: UITextField!
+    
+    
+    // View your Steemit username
     @IBOutlet weak var signatureLabel: UILabel!
+    
+    // FontsButton opens the fontsPicker
     
     @IBOutlet weak var fontsButton: UIButton!
     @IBOutlet weak var fontsPicker: UIPickerView!
+    
+    
+    // LabelFont is unwraped value that we equalize with the chosen font
+    
+
     var labelFont: UIFont?
     
+    
+    // aSelfvote button saves your username and font
+    
     @IBOutlet weak var aSelfvote: UIButton!
+    
+    
+    // Fonts
     
     let fonts = ["HoeflerText-Black", "Farah", "BradleyHandITCTT-Bold", "Noteworthy-Bold", "SnellRoundhand-Bold", "MarkerFelt-Wide", "Avenir-BlackOblique", "Futura-CondensedExtraBold", "Courier-BoldOblique", "HiraKakuProN-W3", "Papyrus"]
     
@@ -25,7 +44,13 @@ class SignatureCreator: UIViewController, UITextFieldDelegate, UIPickerViewDataS
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        
+        // Rounding corners
         fontsButton.layer.cornerRadius = 30
+        
+        
+        // Text and picker delegates
         
         self.signatureTextField.delegate = self
         fontsPicker.delegate = self
@@ -34,10 +59,15 @@ class SignatureCreator: UIViewController, UITextFieldDelegate, UIPickerViewDataS
 
     }
     
+    
+    // Fuctions for hiding keyboard when you tap soewhere else on the screen or press the "return" button
+    
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
         self.view.endEditing(true)
         
     }
+    
+    // Function that allows only lowercase letters and doesn't allow any whitespace
     
     func textField(_ textFieldToChange: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool {
         //just change this charectar username  it's a text field
@@ -55,12 +85,23 @@ class SignatureCreator: UIViewController, UITextFieldDelegate, UIPickerViewDataS
         return true
     }
     
+    
+    // Resigning the first responder in the text field
+    
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
         signatureTextField.resignFirstResponder()
+        
+        
+        // Adding "@" to username only for signature label
+        
+        signatureLabel.text = "@"  + signatureTextField.text!
+
         
         return true
 
     }
+    
+    // Funcions for fonts Picker
     
     
     public func numberOfComponents(in pickerView: UIPickerView) -> Int {
@@ -88,7 +129,7 @@ class SignatureCreator: UIViewController, UITextFieldDelegate, UIPickerViewDataS
     
     
     
-    
+    // Fonts button reveals the picker if it was hidden.
     
     @IBAction func fontsAction(_ sender: Any) {
         signatureLabel.text = "@"  + signatureTextField.text!
@@ -101,6 +142,8 @@ class SignatureCreator: UIViewController, UITextFieldDelegate, UIPickerViewDataS
             fontsPicker.isHidden = true
         }
     }
+    
+    // SelfvoteButton saves your values, dismisses this view controller and takes you backto the main view controller with saved values
     
     @IBAction func selfVoteAction(_ sender: Any) {
         UserDefaults.standard.set(labelFont?.fontName, forKey: "font")

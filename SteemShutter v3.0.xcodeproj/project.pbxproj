@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		5C1F78CC48EEFDFA059A4142 /* Pods_SteemShutter_v3_0.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D2704A27393195CC058194AA /* Pods_SteemShutter_v3_0.framework */; };
 		639FC36CBFE115F634DC4A32 /* Pods_SteemShutter_Extension.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4F5BC0B63249F897D14BEF88 /* Pods_SteemShutter_Extension.framework */; };
+		817DE7B720FF3B460098E42E /* MemeModeTwo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 817DE7B620FF3B460098E42E /* MemeModeTwo.swift */; };
+		81C79F8320FE2D9900B042A2 /* MemeModeOne.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81C79F8220FE2D9900B042A2 /* MemeModeOne.swift */; };
 		81CBABC920FDD7E000B5AAD0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81CBABC820FDD7E000B5AAD0 /* AppDelegate.swift */; };
 		81CBABCB20FDD7E000B5AAD0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81CBABCA20FDD7E000B5AAD0 /* ViewController.swift */; };
 		81CBABCE20FDD7E000B5AAD0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81CBABCC20FDD7E000B5AAD0 /* Main.storyboard */; };
@@ -72,6 +74,8 @@
 		284A969323A3338A3256D108 /* Pods-SteemShutter Framework.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SteemShutter Framework.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SteemShutter Framework/Pods-SteemShutter Framework.debug.xcconfig"; sourceTree = "<group>"; };
 		4F5BC0B63249F897D14BEF88 /* Pods_SteemShutter_Extension.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SteemShutter_Extension.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		69A541763859CD50EB767A9B /* Pods-SteemShutter Framework.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SteemShutter Framework.release.xcconfig"; path = "Pods/Target Support Files/Pods-SteemShutter Framework/Pods-SteemShutter Framework.release.xcconfig"; sourceTree = "<group>"; };
+		817DE7B620FF3B460098E42E /* MemeModeTwo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemeModeTwo.swift; sourceTree = "<group>"; };
+		81C79F8220FE2D9900B042A2 /* MemeModeOne.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemeModeOne.swift; sourceTree = "<group>"; };
 		81CBABC520FDD7E000B5AAD0 /* SteemShutter v3.0.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "SteemShutter v3.0.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		81CBABC820FDD7E000B5AAD0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		81CBABCA20FDD7E000B5AAD0 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -166,6 +170,8 @@
 				81CBABC820FDD7E000B5AAD0 /* AppDelegate.swift */,
 				81CBABCA20FDD7E000B5AAD0 /* ViewController.swift */,
 				81CBABCC20FDD7E000B5AAD0 /* Main.storyboard */,
+				81C79F8220FE2D9900B042A2 /* MemeModeOne.swift */,
+				817DE7B620FF3B460098E42E /* MemeModeTwo.swift */,
 				81CBABCF20FDD7E500B5AAD0 /* Assets.xcassets */,
 				81CBAC0220FDF1F900B5AAD0 /* SignatureCreator.swift */,
 				81CBABD120FDD7E500B5AAD0 /* LaunchScreen.storyboard */,
@@ -429,8 +435,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				81CBABCB20FDD7E000B5AAD0 /* ViewController.swift in Sources */,
+				817DE7B720FF3B460098E42E /* MemeModeTwo.swift in Sources */,
 				81CBABC920FDD7E000B5AAD0 /* AppDelegate.swift in Sources */,
 				81CBAC0320FDF1F900B5AAD0 /* SignatureCreator.swift in Sources */,
+				81C79F8320FE2D9900B042A2 /* MemeModeOne.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
