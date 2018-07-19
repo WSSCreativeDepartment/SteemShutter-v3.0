@@ -15,17 +15,17 @@
 	<key>CFBundlePackageType</key>
 	<string>APPL</string>
 	<key>CFBundleShortVersionString</key>
-	<string>2.6</string>
+	<string>3.1</string>
 	<key>CFBundleVersion</key>
-	<string>47</string>
+	<string>52</string>
 	<key>LSRequiresIPhoneOS</key>
 	<true/>
 	<key>NSCameraUsageDescription</key>
-	<string></string>
+	<string>This app wants to use your camera to make awesome images. Do you aprove it?</string>
 	<key>NSPhotoLibraryAddUsageDescription</key>
-	<string></string>
+	<string>This app wants to save the images to your Photo Library. Do you aprove it?</string>
 	<key>NSPhotoLibraryUsageDescription</key>
-	<string></string>
+	<string>This app wants to have access to your PhotoLibrary and import some photos. Do you aprove it? </string>
 	<key>UILaunchStoryboardName</key>
 	<string>LaunchScreen</string>
 	<key>UIMainStoryboardFile</key>

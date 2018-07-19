@@ -40,6 +40,9 @@
                                 <state key="normal" title="SteemShutter Camera">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <connections>
+                                    <action selector="cameraAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="AJO-QP-BrV"/>
+                                </connections>
                             </button>
                             <button opaque="NO" alpha="0.5" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vd5-bc-yck">
                                 <rect key="frame" x="94" y="90" width="226" height="54"/>
@@ -209,6 +212,7 @@
                         <segue destination="5b6-a3-owh" kind="presentation" identifier="signatureSegue" id="JFu-Gg-MJ3"/>
                         <segue destination="7ZI-TV-aF1" kind="showDetail" identifier="memeSegue" id="9kt-Et-NaH"/>
                         <segue destination="lxj-qt-6VU" kind="showDetail" identifier="framesSegueOne" id="m6W-Hl-vvi"/>
+                        <segue destination="WkH-Xt-yJD" kind="showDetail" identifier="cameraSegue" id="2ah-l4-QAt"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -1369,6 +1373,7 @@
                         <outlet property="focusTapGesture" destination="BF2-Yc-CKI" id="xzJ-1t-2vi"/>
                         <outlet property="rotateCameraButton" destination="4Y4-Eb-Iez" id="wWV-qU-BsA"/>
                         <outlet property="shutterButton" destination="sha-EP-yIc" id="hSv-j8-sMU"/>
+                        <segue destination="2co-wT-9BU" kind="presentation" identifier="photoEditSegue" id="pcz-KC-bnM"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="UrR-Md-KUw" sceneMemberID="firstResponder"/>
@@ -1648,7 +1653,7 @@
                                 <color key="textColor" red="0.99963909390000005" green="1" blue="0.99975615740000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <color key="highlightedColor" red="0.99963909390000005" green="1" blue="0.99975615740000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </label>
-                            <view hidden="YES" clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="G6w-K1-3CN" customClass="CropFrame" customModule="Shutter_3" customModuleProvider="target">
+                            <view hidden="YES" clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="G6w-K1-3CN" customClass="CropFrame" customModule="SteemShutter_v3_0" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="212.66666666666666" width="414" height="310.66666666666674"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="G6w-K1-3CN" secondAttribute="height" multiplier="4:3" id="bBZ-fN-ORv"/>
