@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" systemVersion="17A278a" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="M4Y-Lb-cyx">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="M4Y-Lb-cyx">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -9,31 +13,69 @@
         <!--Today View Controller-->
         <scene sceneID="cwh-vc-ff4">
             <objects>
-                <viewController id="M4Y-Lb-cyx" customClass="TodayViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="M4Y-Lb-cyx" customClass="TodayViewController" customModule="SteemShutter_Extension" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" simulatedAppContext="notificationCenter" id="S3S-Oj-5AN">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="37"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="63"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="top" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hello World" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="280" translatesAutoresizingMaskIntoConstraints="NO" id="GcN-lo-r42">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="63"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="lightTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="bottomLeft" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="widget image" translatesAutoresizingMaskIntoConstraints="NO" id="TPp-Mz-erT">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="63"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="-" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7xB-xc-qH6">
+                                <rect key="frame" x="0.0" y="0.0" width="167" height="63"/>
+                                <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="15"/>
+                                <color key="textColor" red="0.99963909390000005" green="1" blue="0.99975615740000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="-" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gjL-jh-Kqv">
+                                <rect key="frame" x="175" y="1" width="145" height="62"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="145" id="Qfu-gQ-m6g"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="19"/>
+                                <color key="textColor" red="0.99963909390000005" green="1" blue="0.99975615740000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
                         <constraints>
                             <constraint firstItem="ssy-KU-ocm" firstAttribute="bottom" secondItem="GcN-lo-r42" secondAttribute="bottom" constant="20" symbolic="YES" id="0Q0-KW-PJ6"/>
+                            <constraint firstItem="TPp-Mz-erT" firstAttribute="bottom" secondItem="ssy-KU-ocm" secondAttribute="bottom" id="0fQ-oX-OtL"/>
+                            <constraint firstItem="7xB-xc-qH6" firstAttribute="top" secondItem="ssy-KU-ocm" secondAttribute="top" id="2cu-RE-DJd"/>
                             <constraint firstItem="GcN-lo-r42" firstAttribute="leading" secondItem="ssy-KU-ocm" secondAttribute="leading" constant="20" symbolic="YES" id="6Vq-gs-PHe"/>
+                            <constraint firstItem="7xB-xc-qH6" firstAttribute="bottom" secondItem="ssy-KU-ocm" secondAttribute="bottom" id="Ds2-dj-WS5"/>
+                            <constraint firstItem="gjL-jh-Kqv" firstAttribute="bottom" secondItem="ssy-KU-ocm" secondAttribute="bottom" id="Jya-HM-WJF"/>
                             <constraint firstItem="ssy-KU-ocm" firstAttribute="trailing" secondItem="GcN-lo-r42" secondAttribute="trailing" constant="20" symbolic="YES" id="L8K-9R-egU"/>
+                            <constraint firstItem="TPp-Mz-erT" firstAttribute="top" secondItem="ssy-KU-ocm" secondAttribute="top" id="Ue5-8g-pTz"/>
+                            <constraint firstItem="gjL-jh-Kqv" firstAttribute="leading" secondItem="7xB-xc-qH6" secondAttribute="trailing" constant="8" id="YVs-ea-6af"/>
+                            <constraint firstItem="TPp-Mz-erT" firstAttribute="leading" secondItem="ssy-KU-ocm" secondAttribute="leading" id="ain-mn-ed0"/>
                             <constraint firstItem="GcN-lo-r42" firstAttribute="top" secondItem="ssy-KU-ocm" secondAttribute="top" constant="20" symbolic="YES" id="mYS-Cv-VNx"/>
+                            <constraint firstItem="7xB-xc-qH6" firstAttribute="leading" secondItem="ssy-KU-ocm" secondAttribute="leading" id="pQ4-TG-uBm"/>
+                            <constraint firstItem="gjL-jh-Kqv" firstAttribute="trailing" secondItem="ssy-KU-ocm" secondAttribute="trailing" id="w9W-Di-man"/>
+                            <constraint firstItem="gjL-jh-Kqv" firstAttribute="top" secondItem="ssy-KU-ocm" secondAttribute="top" constant="1" id="x2C-BN-oF6"/>
+                            <constraint firstItem="TPp-Mz-erT" firstAttribute="trailing" secondItem="ssy-KU-ocm" secondAttribute="trailing" id="xlZ-uM-WL6"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="ssy-KU-ocm"/>
                     </view>
                     <extendedEdge key="edgesForExtendedLayout"/>
                     <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
-                    <size key="freeformSize" width="320" height="37"/>
+                    <size key="freeformSize" width="320" height="63"/>
+                    <connections>
+                        <outlet property="payoutLabel" destination="gjL-jh-Kqv" id="9NE-Zq-gCg"/>
+                        <outlet property="titleLabel" destination="7xB-xc-qH6" id="hAq-bg-ITA"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vXp-U4-Rya" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="118.40000000000001" y="118.29085457271366"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="widget image" width="1202" height="1008"/>
+    </resources>
 </document>

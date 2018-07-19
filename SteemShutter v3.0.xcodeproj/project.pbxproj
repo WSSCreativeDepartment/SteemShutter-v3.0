@@ -9,7 +9,13 @@
 /* Begin PBXBuildFile section */
 		5C1F78CC48EEFDFA059A4142 /* Pods_SteemShutter_v3_0.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D2704A27393195CC058194AA /* Pods_SteemShutter_v3_0.framework */; };
 		639FC36CBFE115F634DC4A32 /* Pods_SteemShutter_Extension.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4F5BC0B63249F897D14BEF88 /* Pods_SteemShutter_Extension.framework */; };
+		813F216F2100747F00909A2C /* framesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 813F216E2100747F00909A2C /* framesView.swift */; };
+		813F217121007FC500909A2C /* cameraView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 813F217021007FC500909A2C /* cameraView.swift */; };
+		813F217321008BA900909A2C /* photoEdit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 813F217221008BA900909A2C /* photoEdit.swift */; };
+		813F21762100A23600909A2C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 81CBABCF20FDD7E500B5AAD0 /* Assets.xcassets */; };
+		813F21772100A23700909A2C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 81CBABCF20FDD7E500B5AAD0 /* Assets.xcassets */; };
 		817DE7B720FF3B460098E42E /* MemeModeTwo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 817DE7B620FF3B460098E42E /* MemeModeTwo.swift */; };
+		817DE7BB20FF4FE60098E42E /* framesOne.swift in Sources */ = {isa = PBXBuildFile; fileRef = 817DE7BA20FF4FE60098E42E /* framesOne.swift */; };
 		81C79F8320FE2D9900B042A2 /* MemeModeOne.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81C79F8220FE2D9900B042A2 /* MemeModeOne.swift */; };
 		81CBABC920FDD7E000B5AAD0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81CBABC820FDD7E000B5AAD0 /* AppDelegate.swift */; };
 		81CBABCB20FDD7E000B5AAD0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81CBABCA20FDD7E000B5AAD0 /* ViewController.swift */; };
@@ -74,7 +80,13 @@
 		284A969323A3338A3256D108 /* Pods-SteemShutter Framework.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SteemShutter Framework.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SteemShutter Framework/Pods-SteemShutter Framework.debug.xcconfig"; sourceTree = "<group>"; };
 		4F5BC0B63249F897D14BEF88 /* Pods_SteemShutter_Extension.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SteemShutter_Extension.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		69A541763859CD50EB767A9B /* Pods-SteemShutter Framework.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SteemShutter Framework.release.xcconfig"; path = "Pods/Target Support Files/Pods-SteemShutter Framework/Pods-SteemShutter Framework.release.xcconfig"; sourceTree = "<group>"; };
+		813F216E2100747F00909A2C /* framesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = framesView.swift; sourceTree = "<group>"; };
+		813F217021007FC500909A2C /* cameraView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = cameraView.swift; sourceTree = "<group>"; };
+		813F217221008BA900909A2C /* photoEdit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = photoEdit.swift; sourceTree = "<group>"; };
+		813F21742100A0FA00909A2C /* SteemShutter v3.0.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "SteemShutter v3.0.entitlements"; sourceTree = "<group>"; };
+		813F21752100A11300909A2C /* SteemShutter Extension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "SteemShutter Extension.entitlements"; sourceTree = "<group>"; };
 		817DE7B620FF3B460098E42E /* MemeModeTwo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemeModeTwo.swift; sourceTree = "<group>"; };
+		817DE7BA20FF4FE60098E42E /* framesOne.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = framesOne.swift; sourceTree = "<group>"; };
 		81C79F8220FE2D9900B042A2 /* MemeModeOne.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemeModeOne.swift; sourceTree = "<group>"; };
 		81CBABC520FDD7E000B5AAD0 /* SteemShutter v3.0.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "SteemShutter v3.0.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		81CBABC820FDD7E000B5AAD0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -167,9 +179,14 @@
 		81CBABC720FDD7E000B5AAD0 /* SteemShutter v3.0 */ = {
 			isa = PBXGroup;
 			children = (
+				813F21742100A0FA00909A2C /* SteemShutter v3.0.entitlements */,
 				81CBABC820FDD7E000B5AAD0 /* AppDelegate.swift */,
 				81CBABCA20FDD7E000B5AAD0 /* ViewController.swift */,
 				81CBABCC20FDD7E000B5AAD0 /* Main.storyboard */,
+				813F217221008BA900909A2C /* photoEdit.swift */,
+				813F216E2100747F00909A2C /* framesView.swift */,
+				813F217021007FC500909A2C /* cameraView.swift */,
+				817DE7BA20FF4FE60098E42E /* framesOne.swift */,
 				81C79F8220FE2D9900B042A2 /* MemeModeOne.swift */,
 				817DE7B620FF3B460098E42E /* MemeModeTwo.swift */,
 				81CBABCF20FDD7E500B5AAD0 /* Assets.xcassets */,
@@ -203,6 +220,7 @@
 		81CBABF420FDD85100B5AAD0 /* SteemShutter Extension */ = {
 			isa = PBXGroup;
 			children = (
+				813F21752100A11300909A2C /* SteemShutter Extension.entitlements */,
 				81CBABF520FDD85100B5AAD0 /* TodayViewController.swift */,
 				81CBABF720FDD85100B5AAD0 /* MainInterface.storyboard */,
 				81CBABFA20FDD85100B5AAD0 /* Info.plist */,
@@ -296,12 +314,22 @@
 				TargetAttributes = {
 					81CBABC420FDD7E000B5AAD0 = {
 						CreatedOnToolsVersion = 9.4.1;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 1;
+							};
+						};
 					};
 					81CBABDE20FDD83900B5AAD0 = {
 						CreatedOnToolsVersion = 9.4.1;
 					};
 					81CBABEF20FDD85100B5AAD0 = {
 						CreatedOnToolsVersion = 9.4.1;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};
@@ -340,6 +368,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				813F21762100A23600909A2C /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -347,6 +376,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				813F21772100A23700909A2C /* Assets.xcassets in Resources */,
 				81CBABF920FDD85100B5AAD0 /* MainInterface.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -434,11 +464,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				817DE7BB20FF4FE60098E42E /* framesOne.swift in Sources */,
 				81CBABCB20FDD7E000B5AAD0 /* ViewController.swift in Sources */,
 				817DE7B720FF3B460098E42E /* MemeModeTwo.swift in Sources */,
+				813F217321008BA900909A2C /* photoEdit.swift in Sources */,
 				81CBABC920FDD7E000B5AAD0 /* AppDelegate.swift in Sources */,
+				813F216F2100747F00909A2C /* framesView.swift in Sources */,
 				81CBAC0320FDF1F900B5AAD0 /* SignatureCreator.swift in Sources */,
 				81C79F8320FE2D9900B042A2 /* MemeModeOne.swift in Sources */,
+				813F217121007FC500909A2C /* cameraView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -551,7 +585,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -605,7 +639,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SWIFT_COMPILATION_MODE = wholemodule;
@@ -620,6 +654,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "SteemShutter v3.0/SteemShutter v3.0.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = JC7UGY5QLV;
 				INFOPLIST_FILE = "SteemShutter v3.0/Info.plist";
@@ -628,10 +663,10 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "dumar022.SteemShutter-v3-0";
+				PRODUCT_BUNDLE_IDENTIFIER = dumar022;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -641,6 +676,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "SteemShutter v3.0/SteemShutter v3.0.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = JC7UGY5QLV;
 				INFOPLIST_FILE = "SteemShutter v3.0/Info.plist";
@@ -649,10 +685,10 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "dumar022.SteemShutter-v3-0";
+				PRODUCT_BUNDLE_IDENTIFIER = dumar022;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
@@ -679,7 +715,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
@@ -708,7 +744,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
@@ -718,6 +754,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = DEDCD5E7BECCB37030ED9565 /* Pods-SteemShutter Extension.debug.xcconfig */;
 			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = "SteemShutter Extension/SteemShutter Extension.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = JC7UGY5QLV;
 				INFOPLIST_FILE = "SteemShutter Extension/Info.plist";
@@ -730,7 +767,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -738,6 +775,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 0947FD94E9501CC422F3FD83 /* Pods-SteemShutter Extension.release.xcconfig */;
 			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = "SteemShutter Extension/SteemShutter Extension.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = JC7UGY5QLV;
 				INFOPLIST_FILE = "SteemShutter Extension/Info.plist";
@@ -750,7 +788,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

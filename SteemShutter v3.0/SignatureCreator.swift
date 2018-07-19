@@ -150,6 +150,13 @@ class SignatureCreator: UIViewController, UITextFieldDelegate, UIPickerViewDataS
         UserDefaults.standard.set(signatureTextField.text, forKey: "signatureText")
         UserDefaults.standard.set(signatureLabel.text, forKey: "signatureLabel")
         
+        UserDefaults.init(suiteName: "group.shutter")?.set(self.signatureTextField.text, forKey: "MyNameIs")
+
+        
+        
+        
+        
+        
         dismiss(animated: true, completion: nil)
 
 

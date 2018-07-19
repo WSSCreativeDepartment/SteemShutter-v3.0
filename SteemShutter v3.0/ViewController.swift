@@ -8,6 +8,7 @@
 
 import UIKit
 import SwiftyJSON
+import SteemShutter_Framework
 
 class ViewController: UIViewController {
     
@@ -116,6 +117,14 @@ class ViewController: UIViewController {
         
         
     }
+    
+    
+    @IBAction func framesAction(_ sender: Any) {
+        
+        performSegue(withIdentifier: "framesSegueOne", sender: nil)
+        
+    }
+    
     
     
     
