@@ -126,7 +126,7 @@ class ViewController: UIViewController {
     }
     
     @IBAction func cameraAction(_ sender: Any) {
-        performSegue(withIdentifier: "photoEditSegue", sender: nil)
+        performSegue(withIdentifier: "cameraSegue", sender: nil)
     }
     
     
